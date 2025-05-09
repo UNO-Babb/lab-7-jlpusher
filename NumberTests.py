@@ -38,6 +38,11 @@ def isEven(n):
   else:
     return False
 
+def isPalindrome(n):
+  """Returns boolean (True/False) if the number is a palindrome."""
+  return str(n) == str(n)[::-1]
+
+
 def addNum(numList, num):
   """Adds the given number to the given list. Does not add duplicate values."""
 
@@ -69,6 +74,9 @@ def main():
 
   if isEven(num):
     print("%d is an even number" %(num))
+
+  if isPalindrome(num):
+    print("%d is a palindrome" %(num))
 
 
 if __name__ == '__main__':
